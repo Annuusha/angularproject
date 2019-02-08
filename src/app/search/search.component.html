@@ -1,0 +1,19 @@
+
+<div class="container-fluid bg-light ">
+  <form class="form-inline" #movieform="ngForm" (ngSubmit)="getMovie(search.value)">
+    <input type="text" class="form-control text-dark" id="search" type="search" placeholder="Search Here" #search>
+    <button class="btn btn-outline-dark"><i class="fas fa-search" type="submit"></i></button>
+    <h2>Search Results</h2>
+    <div class="card_container container">
+      <div *ngFor = "let movie of arrayOfMovies" class="card" style="width: 18rem;">
+        <img src= {{movie.restaurant.featured_image}} class="card-img-top" alt="..."/>
+        <div class="card-body">
+          <h5 class="card-title">{{movie.restaurant.name}}</h5>
+          <p class="card-text">{{movie.restaurant.location.address}}</p>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <button href="#" (click)="addToFavs(movie.restaurant)" class="btn btn-primary"> Add to Favourites</button>&nbsp;
+          <button  (click)="resDetails(movie.restaurant.R.res_id)" class="btn btn-primary"> Details </button>
+
+        </div>
+      </div>
+    </div>

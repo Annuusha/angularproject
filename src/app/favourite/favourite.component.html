@@ -1,0 +1,13 @@
+
+<div class="card_container container">
+  <div *ngFor = "let data of someVar" class="card" style="width:18rem">
+    <img src={{data.image}} class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{data.name}}</h5>
+      <!-- <p class="card-text">{{data.location}}</p> -->
+       <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <button  (click)="remove(data.id)" class="btn btn-danger">Remove from Favourites</button>
+    </div>
+  </div>
+  </div>
+  

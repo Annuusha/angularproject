@@ -1,0 +1,36 @@
+{
+  "favourites": [
+    {
+      "name": "Bangalore Brew Works",
+      "image": "https://b.zmtcdn.com/data/pictures/chains/8/59638/d90e31beee5cd2695fb44164c5361c8b.jpeg?output-format=webp",
+      "id": 1
+    },
+    {
+      "name": "Stories",
+      "image": "https://b.zmtcdn.com/data/pictures/2/18642512/e1641fbf26b8ea526b8d2d84bac0b923.jpg",
+      "id": 2
+    },
+    {
+      "name": "Byg Brewski Brewing Company",
+      "image": "https://b.zmtcdn.com/data/pictures/2/58882/d3da20dec34b5c9e04d1a3dd03b325a6.jpg?output-format=webp",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
